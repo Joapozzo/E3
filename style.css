@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+/* Defino colores */
+:root{
+    --background: #02050e;
+    --primary: #1e50ff;
+    --secondary: #272d37;
+    --btn-bg: #050d26;
+    --bg-azul-10: #e9eeff;
+    --bg-white: #fff;
+    --bg-electric: #f0fbff;
+    --nav-bg: #0f1525;
+  
+    /* text colors */
+    --text-gray: #adb9c7;
+    --text-white: #f3f4f6;
+  
+    /* decoration */
+    --fire: #ff6d00;
+    --electric: #64d3ff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* Navbar */
+
+header{
+    background: linear-gradient(to bottom, #121e3c, var(--background));
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 0px 25px;
+    position: fixed;
+    top: 0;
+    z-index: 2
+}
+
+.logo-vanta{
+    height: 60%;
+    padding: 0 10px;
+}
+
+.navbar,
+.navbar-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.navbar{
+    gap: 70px;
+}
+.navbar-list{
+    gap: 25px;
+}
+
+.navbar-list a {
+    display: flex;
+    color: var(--text-gray);
+    font-size: 15px;
+}
+
+.carrito-compras{
+    font-weight: 800;
+    border-radius: 10px;
+    height: 30px;
+    padding: 5px 10px 6px 10px;
+    margin-right: 1rem;
+    color: var(--text-white);
+    cursor: pointer;
+}
+
+.navbar-list li:first-child > a {
+    color: var(--text-white);
+    font-weight: 600;
+}
+
+/* Heroo */
+
+.main {
+    padding: 70px 35px;
+    background: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+}
+
+#hero {
+    display: flex;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 0;
+    width: 50%;
+    gap: 18px;
+}
+
+.hero-buttom {
+    display: flex;
+    gap: 15px;
+}
+
+#hero img {
+    width: 35%;
+    padding: 70px 0;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.hero-text p {
+    color: var(--text-gray);
+    font-size: 16px;
+}
+
+.hero-text a {
+    background-color: var(--secondary);
+    color: var(--text-white);
+    width: 125px;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+.hero-text a:first-child{
+    background-color: var(--primary);
+}
+
+/* Hero description */
+
+.hero-description-text {
+    padding: 70px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-description-text h2 {
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.hero-description-text p {
+    text-align: center;
+    font-size: 18px;
+    color: var(--text-gray);
+    max-width: 1200px;
+    width: 800px;
+}
+
